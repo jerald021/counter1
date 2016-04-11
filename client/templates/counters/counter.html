@@ -1,0 +1,14 @@
+<template name="counter">
+    <div>
+        <h1>{{counters.name}}</h1>
+        <span>{{counters.value}}</span>
+    </div>
+
+    {{#if currentUser}}
+        <div>
+            <button id="aumentar">+</button>
+            <button id="disminuir">-</button>
+            <button id="reiniciar">RESET</button>
+        </div>
+    {{/if}}
+</template>
